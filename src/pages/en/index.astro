@@ -9,11 +9,17 @@ import ProfileCheck from "../../components/icons/ProfileCheck.astro"
 import Projects from "../../components/Projects.astro"
 import SectionContainer from "../../components/SectionContainer.astro"
 import Hero from "../../components/Hero.astro"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils"
+
+type tLang = (str: any) => any;
+
+const lang = getLangFromUrl(Astro.url)
+const t:tLang = useTranslations(lang);
 ---
 
 <Layout
-  title="Porfolio de midudev - Desarrollador y Programador Web con 15 años de experiencia"
-  description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
+  title={t('layout.title')}
+  description={t('layout.description')}
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -27,7 +33,7 @@ import Hero from "../../components/Hero.astro"
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
       >
         <Briefcase class="size-8" />
-        Experiencia laboral
+        {t('exp.title')}
       </h2>
       <Experience />
     </SectionContainer>
@@ -37,7 +43,7 @@ import Hero from "../../components/Hero.astro"
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
       >
         <CodeIcon class="size-7" />
-        Proyectos
+        {t('projects.title')}
       </h2>
       <Projects />
     </SectionContainer>
@@ -47,7 +53,7 @@ import Hero from "../../components/Hero.astro"
         class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
       >
         <ProfileCheck class="size-8" />
-        Sobre mí
+        {t('about.title')}
       </h2>
       <AboutMe />
     </SectionContainer>
