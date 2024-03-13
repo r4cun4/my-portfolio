@@ -1,27 +1,42 @@
-# 👨🏻‍💻 Porfolio para programadores y desarrolladores
+# Portfolio Project
 
-<div align="center">
-<a href="https://porfolio.dev/">
-<img src="./public/porfolio.webp">
-</a>
-<p></p>
-</div>
+This website serves as a portfolio highlighting my experience, skills, and projects. Originally developed by [Midudev](https://www.youtube.com/watch?v=HEMvsJTBweY&list=PL-vC3_q-KrjSkwDZqO0a73Hct4Q85aqx5&index=2&t=1081s). I've made a redesign css styles and I've added localization feature in english.
 
-<div align="center">
+## i18n Astro docs
+[i18n.locales](https://docs.astro.build/en/reference/configuration-reference/#i18n)
+[Translate UI strings](https://docs.astro.build/en/recipes/i18n/)
 
-![Astro Badge](https://img.shields.io/badge/Astro-FF3E00?logo=astro&logoColor=fff&style=flat)
-![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/porfolio.dev)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/porfolio.dev)
-![GitHub forks](https://img.shields.io/github/forks/midudev/porfolio.dev)
-![GitHub issues](https://img.shields.io/github/issues/midudev/porfolio.dev)
+## Project Structure
 
-</div>
+- `src/components`: This directory contains all the Astro components used in the project.
+- `src/i18n`: This directory contains TypeScript files that export helpers functions.
+- `src/pages`: This directory contains the Astro pages of the portfolio.
+- `public`: This directory contains static files served by the portfolio.
 
-## 🫂 Contribuidores
+## Getting Started
 
-<a href="https://github.com/midudev/porfolio.dev/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=midudev/porfolio.dev" />
-</a>
+First, install the dependencies:
 
-<p></p>
+```sh
+npm install
+```
+
+Then, start the development server:
+
+```sh
+npm run dev
+```
+
+## Building
+
+To build the project for production, run:
+
+```sh
+npm run build
+```
+
+This will create a dist directory with the built assets.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

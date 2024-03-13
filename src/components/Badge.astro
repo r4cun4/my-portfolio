@@ -1,9 +1,26 @@
-<div class="flex items-center ">
-<span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
-  <span
-    class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
-  ></span>
-  <div class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap">
+<div class="animate-bounce w-6 h-6">
+<span class="relative inline-flex overflow-hidden rounded-full p-[1px] drop-shadow-lg">
+  <div class=
+    "
+      inline-flex
+      items-center
+      justify-center
+      w-full
+      px-3
+      py-1
+      text-sm
+      rounded-full
+      cursor-pointer
+      text-white
+      dark:text-white/80
+      whitespace-nowrap
+      bg-[#42b883]
+      hover:bg-gradient-to-r from-[#42b883] to-[#0ebbd2]
+      hover:text-white
+      font-semibold
+      transition
+    "
+  >
     <slot />
   </div>
 </span>

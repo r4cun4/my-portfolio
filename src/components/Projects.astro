@@ -1,6 +1,13 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import AstroIcon from "./icons/Code.astro"
+import TypeScriptIcon from "./icons/TypeScriptIcon.astro"
+import Netlify from "./icons/Netlify.astro"
+import Vue from "./icons/Vue.astro"
+import Sass from "./icons/Sass.astro"
+import Bootstrap from "./icons/Bootstrap.astro"
+import Firebase from "./icons/Firebase.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
@@ -23,15 +30,50 @@ type TagsType = {
 };
 
 const TAGS: TagsType = {
-  nextjs: {
-    name: 'Next.js',
-    class: 'bg-[#000] text-white dark:bg-white dark:text-[#000]',
-    icon: NextJS,
+  javascript: {
+    name: 'JavaScript',
+    class: 'bg-[#f7df1e] text-black',
+    icon: JavaScript,
   },
   tailwindcss: {
     name: 'Tailwind CSS',
-    class: 'bg-[#06b6d4] text-white',
+    class: 'border border-[#38BDF8] bg-white text-black dark:border-0',
     icon: Tailwind,
+  },
+  astro: {
+    name: 'Astro',
+    class: 'bg-[#000] text-white dark:bg-white dark:text-[#000]',
+    icon: AstroIcon,
+  },
+  typescript: {
+    name: 'TypeScript',
+    class: 'border border-[#007acc] bg-white text-[#007acc] dark:text-[#007acc] dark:border-0',
+    icon: TypeScriptIcon,
+  },
+  netlify: {
+    name: 'Netlify',
+    class: 'bg-[#2E51ED] text-white',
+    icon: Netlify,
+  },
+  vuejs: {
+    name: 'Vue',
+    class: 'bg-[#4fc08d] text-white',
+    icon: Vue,
+  },
+  sass: {
+    name: 'Sass',
+    class: 'bg-[#c69] text-white',
+    icon: Sass,
+  },
+  bootstrap: {
+    name: 'Bootstrap',
+    class: 'bg-[#7431FA] text-white',
+    icon: Bootstrap,
+  },
+  firebase: {
+    name: 'Firebase',
+    class: 'bg-[#1A73E8] text-white',
+    icon: Firebase,
   },
 };
 
@@ -47,13 +89,13 @@ interface ProjectType {
 const PROJECTS:ProjectType[] = t('projects');
 ---
 
-<div class="flex flex-col gap-y-16">
+<div class="flex flex-col gap-y-16 lg:bg-gray-100 lg:dark:bg-[#1A1A1A] p-4 lg:rounded-[25px] lg:shadow-lg">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, imageAlt, title, description, tags, link, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt={imageAlt} class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
@@ -79,7 +121,7 @@ const PROJECTS:ProjectType[] = t('projects');
                 })}
               </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <div class="mt-2 text-gray-700 dark:text-gray-400 text-pretty">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
             <LinkButton href={github}>
