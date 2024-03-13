@@ -50,8 +50,7 @@ export const languages = {
         {
           title: "Mi porfolio",
           description: "Este sitio web representa mi experiencia, habilidades y proyectos destacados. Utilizando un template base creado por Midudev como punto de partida, lo he personalizado y enriquecido con funcionalidades de localización, permitiendo a los usuarios cambiar el idioma según sus preferencias.",
-          link: "https://adventjs.dev",
-          github: "https://github.com/r4cun4/shopping-list",
+          github: "https://github.com/r4cun4/my-portfolio",
           image: "/projects/porfolio.png",
           tags: ["astro", "javascript", "typescript", "tailwindcss", "netlify"],
         },
@@ -102,8 +101,7 @@ export const languages = {
         {
           "title": "My Portfolio",
           "description": "This website represents my experience, skills, and notable projects. Using a base template created by Midudev as a starting point, I have customized and enriched it with localization features, allowing users to change the language according to their preferences.",
-          "link": "https://adventjs.dev",
-          "github": "https://github.com/r4cun4/shopping-list",
+          "github": "https://github.com/r4cun4/my-portfolio",
           "image": "/projects/porfolio.png",
           "tags": ["astro", "javascript", "typescript", "tailwindcss", "netlify"]
         }
