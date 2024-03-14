@@ -42,7 +42,7 @@ export const languages = {
         {
           title: "Shopping list",
           description: "Este proyecto personal tiene como objetivo agilizar el proceso de compras en el supermercado. Se ha implementado utilizando tecnologías avanzadas como Vue Router para gestionar las URLs, Vuex para el manejo del estado de la aplicación, y se ha seguido el patrón Options API. Además, está conectado a Firebase para una experiencia aún más fluida.",
-          link: "https://vue-lista-de-compras.netlify.app/#/",
+          link: "https://shopping-list-vue-app.netlify.app/#/",
           github: "https://github.com/r4cun4/shopping-list",
           image: "/projects/shopping-list.png",
           tags: ["vuejs", "javascript", "sass", "bootstrap", "firebase", "netlify"],
@@ -93,7 +93,7 @@ export const languages = {
         {
           "title": "Shopping list",
           "description": "This personal project aims to streamline the shopping process at the supermarket. It has been implemented using advanced technologies such as Vue Router to manage URLs, Vuex for handling application state, and follows the Options API pattern. Additionally, it is connected to Firebase for an even smoother experience.",
-          "link": "https://vue-lista-de-compras.netlify.app/#/",
+          "link": "https://shopping-list-vue-app.netlify.app/#/",
           "github": "https://github.com/r4cun4/shopping-list",
           "image": "/projects/shopping-list.png",
           "tags": ["vuejs", "javascript", "sass", "bootstrap", "firebase", "netlify"]
