@@ -1,14 +1,10 @@
-import { useTranslations } from '@/i18n/utils';
-import { getLangFromUrl } from '@/i18n/utils';
-import { ui } from '@/i18n/ui';
-
 export type Experience = {
     title: string;
     company: string;
     date: string;
     description: string;
     link: string;
-}
+};
 
 export type ProjectType = {
     image: string;
@@ -18,7 +14,7 @@ export type ProjectType = {
     tags: string[];
     link?: string;
     github?: string;
-}
+};
 
 export type TagType = {
     name: string;
@@ -37,4 +33,4 @@ export type Props = {
     company?: string
     description?: string
     date?: string
-}
+};
