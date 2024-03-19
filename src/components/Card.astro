@@ -1,11 +1,7 @@
 ---
-interface Props {
-	title: string;
-	body: string;
-	href: string;
-}
+import type { Props } from '@/types'
 
-const { href, title, body } = Astro.props;
+const { href, title, body } = Astro.props as Props;
 ---
 
 <li class="link-card">

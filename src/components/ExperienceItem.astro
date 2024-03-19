@@ -1,12 +1,7 @@
 ---
-interface Props {
-  title: string
-  company: string
-  description: string
-  date: string
-}
+import type { Props } from '@/types'
 
-const { title, company, description, date } = Astro.props
+const { title, company, description, date } = Astro.props as Props
 ---
 
 <div

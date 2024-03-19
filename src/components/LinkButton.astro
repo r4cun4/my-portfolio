@@ -1,5 +1,7 @@
 ---
-const { href } = Astro.props
+import type { Props } from '@/types'
+
+const { href } = Astro.props as Props
 ---
 
 <a
