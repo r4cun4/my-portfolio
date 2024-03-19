@@ -4,13 +4,9 @@ import "@fontsource-variable/onest"
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 import { ViewTransitions } from "astro:transitions"
+import type { Props } from '@/types'
 
-interface Props {
-  title: string
-  description: string
-}
-
-const { description, title } = Astro.props
+const { description, title } = Astro.props as Props
 
 const { currentLocale } = Astro
 ---
