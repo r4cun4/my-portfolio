@@ -23,6 +23,7 @@ export const languages = {
       'about.title': 'Sobre mí',
       'about.bio': `<p>¡Hola! Soy Rodrigo, un desarrollador Frontend con una sólida experiencia en tecnología y hotelería. Después de más de una década en la industria hotelera, ascendí al puesto de Gerente de Recepción en un hotel 5 estrellas, donde adquirí habilidades en servicio al cliente, gestión de equipos y toma de decisiones bajo presión.</p><p>Decidí dar un giro a mi carrera y sumergirme en el mundo del desarrollo web, donde me especializo en el ecosistema de Vue.js y me mantengo actualizado sobre las últimas tendencias. Mi enfoque en cada proyecto es crear soluciones estéticamente atractivas y altamente funcionales, combinando mis habilidades en comunicación y liderazgo.</p><p>He enfrentado y superado desafíos complejos, lo que me ha llevado a crecer tanto personal como profesionalmente. Fuera del trabajo, disfruto jugando al fútbol con amigos y pasando tiempo de calidad con mi familia, lo que me ayuda a mantener un equilibrio saludable entre el trabajo y la vida personal.</p><p>Estoy entusiasmado con la oportunidad de contribuir con mi experiencia y pasión al éxito de tu equipo o empresa. Espero con ansias la posibilidad de colaborar juntos en proyectos futuros.</p><p>¡Gracias por tomarte el tiempo de conocerme!</p>`,
       'footer.rights': 'Casi todos los derechos reservados',
+      'personalImageAlt': 'Fotografía del propietario del sitio web',
       exp: [
         {
           title: 'Desarrollador Frontend',
@@ -45,6 +46,7 @@ export const languages = {
           link: "https://shopping-list-vue-app.netlify.app/#/",
           github: "https://github.com/r4cun4/shopping-list",
           image: "/projects/shopping-list.png",
+          imageAlt: "Captura de pantalla de la aplicación de lista de compras en un dispositivo móvil",
           tags: ["vuejs", "javascript", "sass", "bootstrap", "firebase", "netlify"],
         },
         {
@@ -52,6 +54,7 @@ export const languages = {
           description: "Este sitio web representa mi experiencia, habilidades y proyectos destacados. Utilizando un template base creado por Midudev como punto de partida, lo he personalizado y enriquecido con funcionalidades de localización, permitiendo a los usuarios cambiar el idioma según sus preferencias.",
           github: "https://github.com/r4cun4/my-portfolio",
           image: "/projects/porfolio.png",
+          imageAlt: "Captura de pantalla del sitio web mostrado en un navegador web",
           tags: ["astro", "javascript", "typescript", "tailwindcss", "netlify"],
         },
       ]
@@ -73,6 +76,7 @@ export const languages = {
       'about.title': 'About me',
       'about.bio': "<p>Hello! I'm Rodrigo, a Frontend developer with a solid background in technology and hospitality. After over a decade in the hospitality industry, I rose to the position of Reception Manager at a 5-star hotel, where I gained skills in customer service, team management, and decision-making under pressure.</p><p>I decided to pivot my career and dive into the world of web development, specializing in the Vue.js ecosystem and staying updated on the latest trends. My focus on every project is to create aesthetically appealing and highly functional solutions, combining my skills in communication and leadership.</p><p>I have faced and overcome complex challenges, leading to personal and professional growth. Outside of work, I enjoy playing soccer with friends and spending quality time with my family, which helps me maintain a healthy balance between work and personal life.</p><p>I am excited about the opportunity to contribute my experience and passion to your team or company's success. I look forward to the possibility of collaborating on future projects together.</p><p>Thank you for taking the time to get to know me!</p>",
       'footer.rights': 'Almost all rights reserved',
+      'personalImageAlt': 'Photograph of the website owner',
       exp: [
         {
           "title": "Frontend Developer",
@@ -91,19 +95,21 @@ export const languages = {
       ],
       projects: [
         {
-          "title": "Shopping list",
-          "description": "This personal project aims to streamline the shopping process at the supermarket. It has been implemented using advanced technologies such as Vue Router to manage URLs, Vuex for handling application state, and follows the Options API pattern. Additionally, it is connected to Firebase for an even smoother experience.",
-          "link": "https://shopping-list-vue-app.netlify.app/#/",
-          "github": "https://github.com/r4cun4/shopping-list",
-          "image": "/projects/shopping-list.png",
-          "tags": ["vuejs", "javascript", "sass", "bootstrap", "firebase", "netlify"]
+          title: "Shopping list",
+          description: "This personal project aims to streamline the shopping process at the supermarket. It has been implemented using advanced technologies such as Vue Router to manage URLs, Vuex for handling application state, and follows the Options API pattern. Additionally, it is connected to Firebase for an even smoother experience.",
+          link: "https://shopping-list-vue-app.netlify.app/#/",
+          github: "https://github.com/r4cun4/shopping-list",
+          image: "/projects/shopping-list.png",
+          imageAlt: "Screenshot of the shopping list app on a mobile device",
+          tags: ["vuejs", "javascript", "sass", "bootstrap", "firebase", "netlify"]
         },
         {
-          "title": "My Portfolio",
-          "description": "This website represents my experience, skills, and notable projects. Using a base template created by Midudev as a starting point, I have customized and enriched it with localization features, allowing users to change the language according to their preferences.",
-          "github": "https://github.com/r4cun4/my-portfolio",
-          "image": "/projects/porfolio.png",
-          "tags": ["astro", "javascript", "typescript", "tailwindcss", "netlify"]
+          title: "My Portfolio",
+          description: "This website represents my experience, skills, and notable projects. Using a base template created by Midudev as a starting point, I have customized and enriched it with localization features, allowing users to change the language according to their preferences.",
+          github: "https://github.com/r4cun4/my-portfolio",
+          image: "/projects/porfolio.png",
+          imageAlt: "Screenshot of the website displayed in a web browser",
+          tags: ["astro", "javascript", "typescript", "tailwindcss", "netlify"]
         }
       ],
     },
